@@ -1,11 +1,21 @@
 # Data Types
 - Manipulating and analyzing data with incorrect data types could lead to compromised analysis as you go along the data science workflow.
   When working with new data, you should always check the data types of your columns using the .dtypes attribute or the .info() method. Often times, you'll run into     columns that should be converted to different data types before starting any analysis.
-- code 
-  ```py
-    print(df.info()) # print data types of each column
-    print(df['user_type'].describe()) # to print the summary statistics of the user_type column from df
-  ```
+-  Code
+ 
+    ```py
+      # Print the information of df
+      print(df.info())
+
+      # Print summary statistics of user_type column
+      print(df['user_type'].describe())
+    
+      # Get the data type of column 
+      print(df['user_type'].dtype)
+      
+      # Write an assert statement confirming the change
+      assert df['user_type_cat'].dtype == 'category'
+    ```
 
 
 ## Continues (Nmerical) 
@@ -27,9 +37,16 @@
 - you can assign number for each value ascendingly
 - In Python takes category data type
 
-  ```py
-  df["marriage_status"] = df["marriage_status"].astype('category')
-  ```
+    ```py
+    # Print new summary statistics 
+    print(df['user_type_cat'].describe())
+    
+    # Convert user_type from integer to category
+    df["marriage_status"] = df["marriage_status"].astype('category')
+    
+    # Print new summary statistics 
+    print(df['user_type_cat'].describe())
+    ```
 ## Nominal
 - string without priority. 
 - e.g: eye color: Green, Red, Blue
