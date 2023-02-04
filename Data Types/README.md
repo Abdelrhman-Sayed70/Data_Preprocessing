@@ -19,6 +19,7 @@
 - Orderd in a meaningful way.
 - Ordinal data is classified into categories within a variable that have a natural rank order. However, the distances between the categories are uneven or unknown.
 - e.g
+
   ![Screenshot 2023-02-04 185000](https://user-images.githubusercontent.com/99830416/216779498-62e16c79-af89-475e-a9b3-9d0ac6e0c655.png)
 - you can assign number for each value ascendingly
 - In Python takes category data type
@@ -39,7 +40,7 @@
  
 
 ## Continues (Nmerical) 
-- numbers
+- Numbers
 - In Python takes int, float data types
 
   ```py
@@ -47,6 +48,12 @@
   sales['Revenue'] = sales['Revenue'].str.strip('$') 
   sales['Revenue'] = sales['Revenue'].astype('int')
   ```
+- Get the mean of this column 
+
+    ```py
+    print(sales['Revenue'].mean())
+    ```
+
 
 ## Nominal
 - string without priority. 
