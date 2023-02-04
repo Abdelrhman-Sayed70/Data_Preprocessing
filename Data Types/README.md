@@ -12,21 +12,7 @@
     
       # Get the data type of column 
       print(df['user_type'].dtype)
-      
-      # Write an assert statement confirming the change
-      assert df['user_type_cat'].dtype == 'category'
     ```
-
-
-## Continues (Nmerical) 
-- numbers
-- In Python takes int, float data types
-
-  ```py
-  # remove $ sign then convert to int
-  sales['Revenue'] = sales['Revenue'].str.strip('$') 
-  sales['Revenue'] = sales['Revenue'].astype('int')
-  ```
 
 ## Categorical (Ordinal)
 - String with priority.
@@ -44,9 +30,24 @@
     # Convert user_type from integer to category
     df["marriage_status"] = df["marriage_status"].astype('category')
     
+    # Write an assert statement confirming the change
+    assert df['user_type_cat'].dtype == 'category'
+    
     # Print new summary statistics 
     print(df['user_type_cat'].describe())
     ```
+ 
+
+## Continues (Nmerical) 
+- numbers
+- In Python takes int, float data types
+
+  ```py
+  # remove $ sign then convert to int
+  sales['Revenue'] = sales['Revenue'].str.strip('$') 
+  sales['Revenue'] = sales['Revenue'].astype('int')
+  ```
+
 ## Nominal
 - string without priority. 
 - e.g: eye color: Green, Red, Blue
