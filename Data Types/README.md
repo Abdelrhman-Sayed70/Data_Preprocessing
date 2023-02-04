@@ -39,7 +39,7 @@
     ```
  
 
-## Continues (Nmerical) 
+## Continues (Numerical) 
 - Numbers
 - In Python takes int, float data types
 
