@@ -1,6 +1,6 @@
 # Data Types
 
-## Continues (numerical) 
+## Continues (Nmerical) 
 - numbers
 - In Python takes int, float data types
 
