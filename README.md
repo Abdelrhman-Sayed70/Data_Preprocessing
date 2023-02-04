@@ -20,9 +20,9 @@ Bad data could be:
 - Ways to deal with empty cells:
 
    ❱ Remove rows that contain empty cells.<br> 
-   ❱ Replace empty values <br> 
+   ❱ Replace all empty cells with values <br> 
 
-### ❱ Remove rows that contain empty cells
+#### ❱ Remove rows that contain empty cells
   ```py
   # not affect the original dataframe
   newdf = df.dropna()
@@ -30,7 +30,7 @@ Bad data could be:
   # affect the original dataframe
   df.dropna(inplcae=True)
   ```
-### ❱ Replace empty values
+#### ❱ Replace empty cells with values
 ```py
 # fill all empty cells in dataframe with value 130 (in the original dataframe)
 df.fillna(130, inplace=True)
@@ -44,4 +44,25 @@ df["Quantity"].fillna(column_mean, inplace=True)
 ```
 
 # Wrong fromat
- 
+- Cells with data of wrong format can make it difficult, or even impossible, to analyze data. For example this record "20201226" in date column is wrong format data 
+  that should be 2020-12-26
+- Wayes to fix wrong format data:
+    
+   ❱ convert all cells in the columns into the same format <br>  
+   ❱ remove the rows that has wrong format  <br> 
+   
+#### ❱ convert all cells in the columns into the same format
+```py
+import pandas as pd
+df = pd.read_csv('data.csv')
+df['Date'] = pd.to_datetime(df['Date'])
+print(df.to_string())
+```
+#### ❱ Replace empty cells with values
+
+- The result from the converting the column to datatime  gave us a NaT value, which can be handled as a NULL value, and we can remove the row by using the dropna()       method.
+
+```py
+
+
+```
