@@ -1,4 +1,12 @@
 # Data Types
+- Manipulating and analyzing data with incorrect data types could lead to compromised analysis as you go along the data science workflow.
+  When working with new data, you should always check the data types of your columns using the .dtypes attribute or the .info() method. Often times, you'll run into     columns that should be converted to different data types before starting any analysis.
+- code 
+  ```py
+    print(df.info()) # print data types of each column
+    print(df['user_type'].describe()) # to print the summary statistics of the user_type column from df
+  ```
+
 
 ## Continues (Nmerical) 
 - numbers
