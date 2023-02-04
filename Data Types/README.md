@@ -58,6 +58,3 @@
 ## Nominal
 - string without priority. 
 - e.g: eye color: Green, Red, Blue
-
-## 
-- marriage status
