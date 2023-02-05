@@ -28,9 +28,9 @@ Bad data could be:
 
 > - Empty Cell can potentially give you a wrong result when you analyze data.
 > - If you want to assign some missing values as null ? assume that some cells have '?', 'UNDEFINED' i want to make them read as Null values
->  ```py
->  df = pd.read_csv('data.csv', na_values=['?','UNDEFINED'])
->  ```
+>    ```py
+>    df = pd.read_csv('data.csv', na_values=['?','UNDEFINED'])
+>    ```
 > - Ways to deal with empty cells:
 >
 >   ❱ Remove rows that contain empty cells.<br> 
@@ -64,11 +64,12 @@ Bad data could be:
 
 ## *c- Wrong fromat*
 > - Cells with data of wrong format can make it difficult, or even impossible, to analyze data. For example this record "20201226" in date column is wrong format data 
->  that should be 2020-12-26
-> - Wayes to fix wrong format data:<br> 
->     ❱ convert all cells in the columns into the same format   
->     ❱ remove the rows that has wrong format   
->   
+>   that should be 2020-12-26
+> - Wayes to fix wrong format data :
+>
+>     ❱ convert all cells in the columns into the same format<br> 
+>     ❱ remove the rows that has wrong format 
+>     
 > ### ❱ convert all cells in the columns into the same format
 > ```py
 > import pandas as pd
@@ -85,46 +86,50 @@ Bad data could be:
 > ```
 
 ## *d- Wrong data*
-> - "Wrong data" does not have to be "empty cells" or "wrong format", it can just be wrong,
+> -  Wrong data does not have to be empty cells or wrong format, it can just be wrong,
+>
 > -  like if someone registered "199" instead of "1.99".
+>
 > -  If you have a data set for courses in the college. You have class duration is 2 or 3 hours. While you check the data set you find out that there is a classes have      duration 30 hours! 
+>
 > - Sometimes you can spot wrong data by looking at the data set, because you have an expectation of what it should be.
+>
 > - Wayes to fix wrong format data: <br>
 >     ❱ Replacing Values<br> 
 >     ❱ Removing Rows
-
-### ❱ Replacing Values
-- One way to fix wrong values is to replace them with something suitable else.
-- Set "Duration" = 45 in row 7:
- 
-   ```py
-   df.loc[7, 'Duration'] = 45
-   ```
-   
-- For small data sets you might be able to replace the wrong data one by one, but not for big data sets. To replace wrong data for larger data sets you can create some   rules, e.g. set some boundaries for legal values, and replace any values that are outside of the boundaries.
-
-   ```py
-   # set all values that are greater than 120 to 120 in Duration column
-   df.loc[df['Duration'] > 120,'Duration'] = 120 
-   ```
-   
-   ```py
-   # the same function using loop 
-   for x in df.index:
-       if df.loc[x, "Duration"] > 120:
-            df.loc[x, "Duration"] = 120
-   ```
-   
-### ❱ Remove rows
-   
-- Another way of handling wrong data is to remove the rows that contains wrong data.
-- This way you do not have to find out what to replace them with, and there is a good chance you do not need them to do your analyses.
-
-   ```py
-   for x in df.index:
-     if df.loc[x, "Duration"] > 120:
-       df.drop(x, inplace = True)
-   ```
+>
+> ### ❱ Replacing Values
+> - One way to fix wrong values is to replace them with something suitable else.
+> - Set "Duration" = 45 in row 7:
+>  
+>   ```py
+>   df.loc[7, 'Duration'] = 45
+>   ```
+>   
+> - For small data sets you might be able to replace the wrong data one by one, but not for big data sets. To replace wrong data for larger data sets you can create       some   rules, e.g. set some boundaries for legal values, and replace any values that are outside of the boundaries.
+>
+>   ```py
+>   # set all values that are greater than 120 to 120 in Duration column
+>   df.loc[df['Duration'] > 120,'Duration'] = 120 
+>   ```
+>   
+>   ```py
+>   # the same function using loop 
+>   for x in df.index:
+>       if df.loc[x, "Duration"] > 120:
+>            df.loc[x, "Duration"] = 120
+>   ```
+>   
+>### ❱ Remove rows
+>   
+>- Another way of handling wrong data is to remove the rows that contains wrong data.
+>- This way you do not have to find out what to replace them with, and there is a good chance you do not need them to do your analyses.
+>
+>   ```py
+>   for x in df.index:
+>     if df.loc[x, "Duration"] > 120:
+>       df.drop(x, inplace = True)
+>   ```
    
 ## *e- Duplicates*
 - Discovering Duplicates
