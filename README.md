@@ -1,5 +1,6 @@
 # Data_Cleaning
-![R](https://user-images.githubusercontent.com/99830416/216778235-0f435edf-d3ba-4881-af42-4f425c03a2c2.gif)
+ ![render](https://user-images.githubusercontent.com/99830416/216795669-08509910-1347-478a-afe5-a408a2a84746.gif)
+
 
 <b> It's commonly said that data scientists spend 80% of their time cleaning and manipulating data and only 20% of their time analyzing it.The time spent cleaning is vital since analyzing dirty data can lead you to draw inaccurate conclusions.
 Data cleaning is an essential task in data science. Without properly cleaned data, the results of any data analysis or machine learning model could be inaccurate. In this repo, you will learn how to identify, diagnose, and treat a variety of data cleaning problems in Python, ranging from simple to advanced. You will deal with improper data types, check that your data is in the correct range, handle missing data, perform record linkage, and more!</b>
@@ -48,8 +49,8 @@ df["Quantity"].fillna(column_mean, inplace=True)
   that should be 2020-12-26
 - Wayes to fix wrong format data:
     
-   ❱ convert all cells in the columns into the same format <br>  
-   ❱ remove the rows that has wrong format  <br> 
+   ❱ convert all cells in the columns into the same format   
+   ❱ remove the rows that has wrong format   
    
 #### ❱ convert all cells in the columns into the same format
 ```py
@@ -72,6 +73,7 @@ df.dropna(subset=['Date'], inplace = True)
 -  If you have a data set for courses in the college. You have class duration is 2 or 3 hours. While you check the data set you find out that there is a classes have      duration 30 hours! 
 - Sometimes you can spot wrong data by looking at the data set, because you have an expectation of what it should be.
 - Wayes to fix wrong format data:
+
    ❱ Replacing Values<br> 
    ❱ Removing Rows
 
