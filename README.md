@@ -12,17 +12,17 @@
 ![separator2](https://i.imgur.com/4gX5WFr.png)
 
 # Data Cleaning 
-> Data cleaning means fixing bad data in your data set.<br>
-> Bad data could be: 
->
->   - a. Null values
->   - b. Drop unnecessary columns
->   - c. Wrong format
->   - d. Wrong data
->   - e. Duplicates
->   - f. Handling unwanted features
+ Data cleaning means fixing bad data in your data set.<br>
+ Bad data could be: 
 
-> ## *a- Null values*
+   - a. Null values
+   - b. Drop unnecessary columns
+   - c. Wrong format
+   - d. Wrong data
+   - e. Duplicates
+   - f. Handling unwanted features
+
+## *a- Null values*
 >
 > - Empty Cell can potentially give you a wrong result when you analyze data.
 > - If you want to assign some missing values as null ? assume that some cells have '?', 'UNDEFINED' i want to make them read as Null values
