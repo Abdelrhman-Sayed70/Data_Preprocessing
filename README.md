@@ -132,31 +132,30 @@ Bad data could be:
 >   ```
    
 ## *e- Duplicates*
-- Discovering Duplicates
-  
-  ```py
-  print(df.duplicated()) # Returns True for every row that is a duplicate, othwerwise False
-  ```
- 
- - Removing Duplicates
- 
-   ```py
-   df.drop_duplicates(inplace = True)
-   ```
+> - Discovering Duplicates
+>  
+>   ```py
+>   print(df.duplicated()) # Returns True for every row that is a duplicate, othwerwise False
+>   ```
+> 
+> - Removing Duplicates
+> 
+>   ```py
+>   df.drop_duplicates(inplace = True)
+>   ```
    
 ## *f. Handling unwanted features*
-- Words that starts with the symbol '@', e.g., @AnnaMedaris, are removed.
-- Hashtag symbols are removed, e.g., #depression is converted to depression.
-  
-  ```py
-  df['name'] = df['name'].str.strip('@')
-  df['titles'] = df['titles'].str.strip('#')
-  # this function make the data type of column string
-  ```
+> - Words that starts with the symbol '@', e.g., @AnnaMedaris, are removed.
+> - Hashtag symbols are removed, e.g., #depression is converted to depression.
+>  
+>     ```py
+>     df['name'] = df['name'].str.strip('@')
+>     df['titles'] = df['titles'].str.strip('#')
+>     # this function make the data type of column string
+>     ```
+>
+> - Delete any URL
 
-- Delete any URL
-
----
 ![separator2](https://i.imgur.com/4gX5WFr.png)
 # Checking for the correctness columns data types  
 
