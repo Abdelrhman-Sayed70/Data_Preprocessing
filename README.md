@@ -141,7 +141,7 @@ df.dropna(subset=['Date'], inplace = True)
   ```py
   df['name'] = df['name'].str.strip('@')
   df['titles'] = df['titles'].str.strip('#')
-  # this function make the data type of column strnig
+  # this function make the data type of column string
   ```
 
 - Delete any URL
