@@ -1,10 +1,8 @@
 # Data_Preprocessing
 ![analyze-gif](https://user-images.githubusercontent.com/99830416/216808760-167a7c01-12ff-462f-afc5-91771ecb5508.gif)
 
-> <b> It's commonly said that data scientists spend 80% of their time preprocess, cleaning and manipulating data and only 20% of their time analyzing it.The time spent > cleaning is vital since analyzing dirty data can lead you to draw inaccurate conclusions.
-> Data cleaning is an essential task in data science. Without properly preprocessed, cleaned data, the results of any data analysis or machine learning model could be > inaccurate. In this repo, you will learn how to identify, diagnose, and treat a variety of data preprocessing & data cleaning problems in Python, ranging from simple  > to advanced. You will deal with improper data types, check that your data is in the correct range, handle missing data, perform record linkage, and more!</b>
-
-![separator2](https://i.imgur.com/4gX5WFr.png)
+> <b> It's commonly said that data scientists spend 80% of their time preprocess, cleaning and manipulating data and only 20% of their time analyzing it.The time spent   cleaning is vital since analyzing dirty data can lead you to draw inaccurate conclusions.
+> Data cleaning is an essential task in data science. Without properly preprocessed, cleaned data, the results of any data analysis or machine learning model could be  inaccurate. In this repo, you will learn how to identify, diagnose, and treat a variety of data preprocessing & data cleaning problems in Python, ranging from simple to advanced. You will deal with improper data types, check that your data is in the correct range, handle missing data, perform record linkage, and more!</b>
 
 ## Pre_processing performed through those steps :
 > - [Data Cleaning ](#data-cleaning)
@@ -12,20 +10,21 @@
 > - [Data Normalization](#data-normalization)
 > - [Encoding categorical data to numerical data](#encoding-categorical-data-to-numerical-data)
 
+![separator2](https://i.imgur.com/4gX5WFr.png)
+
 # Data Cleaning 
-Data cleaning means fixing bad data in your data set.<br>
-Bad data could be: 
+> Data cleaning means fixing bad data in your data set.<br>
+> Bad data could be: 
+>
+>   - a. Null values
+>   - b. Drop unnecessary columns
+>   - c. Wrong format
+>   - d. Wrong data
+>   - e. Duplicates
+>   - f. Handling unwanted features
 
->  - a. Null values
->  - b. Drop unnecessary columns
->  - c. Wrong format
->  - d. Wrong data
->  - e. Duplicates
->  - f. Handling unwanted features
-
----
-## *a- Null values*
-
+> ## *a- Null values*
+>
 > - Empty Cell can potentially give you a wrong result when you analyze data.
 > - If you want to assign some missing values as null ? assume that some cells have '?', 'UNDEFINED' i want to make them read as Null values
 >    ```py
