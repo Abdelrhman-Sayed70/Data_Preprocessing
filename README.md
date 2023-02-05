@@ -21,7 +21,7 @@ Bad data could be:
 5. Duplicates
 6. Handling unwanted features
 
-## 1- Empty Cells
+## *1- Empty Cells*
 
 - Empty Cell can potentially give you a wrong result when you analyze data.
 - Ways to deal with empty cells:
@@ -50,12 +50,12 @@ column_mean = df['Quantity'].mean() # make sure that Quantity is column is int d
 df["Quantity"].fillna(column_mean, inplace=True)
 ```
 
-## 2- Drop unnecessary columns
+## *2- Drop unnecessary columns*
   ```py
   df.drop(columns=['col 1','col 4'],inplace=True)
   ```
 
-## 3- Wrong fromat
+## *3- Wrong fromat*
 - Cells with data of wrong format can make it difficult, or even impossible, to analyze data. For example this record "20201226" in date column is wrong format data 
   that should be 2020-12-26
 - Wayes to fix wrong format data:
@@ -78,7 +78,7 @@ print(df.to_string())
 df.dropna(subset=['Date'], inplace = True)
 ```
 
-## 4- Wrong data
+## *4- Wrong data*
 - "Wrong data" does not have to be "empty cells" or "wrong format", it can just be wrong,
 -  like if someone registered "199" instead of "1.99".
 -  If you have a data set for courses in the college. You have class duration is 2 or 3 hours. While you check the data set you find out that there is a classes have      duration 30 hours! 
@@ -121,7 +121,7 @@ df.dropna(subset=['Date'], inplace = True)
        df.drop(x, inplace = True)
    ```
    
-## 5- Duplicates
+## *5- Duplicates*
 - Discovering Duplicates
   
   ```py
@@ -134,7 +134,7 @@ df.dropna(subset=['Date'], inplace = True)
    df.drop_duplicates(inplace = True)
    ```
    
-## 6. Handling unwanted features
+## *6. Handling unwanted features*
 - Words that starts with the symbol '@', e.g., @AnnaMedaris, are removed.
 - Hashtag symbols are removed, e.g., #depression is converted to depression.
   
@@ -154,3 +154,4 @@ df.dropna(subset=['Date'], inplace = True)
 # Encoding categorical data to numerical data
 
 # Add some features
+- Every word is converted to lowercase
