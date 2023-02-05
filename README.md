@@ -58,8 +58,8 @@ Bad data could be:
 > ```
 
 ## *b- Drop unnecessary columns*
-  ```py
-  df.drop(columns=['col 1','col 4'],inplace=True)
+<  ```py
+<  df.drop(columns=['col 1','col 4'],inplace=True)
   ```
 
 ## *c- Wrong fromat*
