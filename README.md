@@ -1,6 +1,5 @@
 # Data_Preprocessing
-  
-
+![analyze-gif](https://user-images.githubusercontent.com/99830416/216808760-167a7c01-12ff-462f-afc5-91771ecb5508.gif)
 
 <b> It's commonly said that data scientists spend 80% of their time preprocess, cleaning and manipulating data and only 20% of their time analyzing it.The time spent cleaning is vital since analyzing dirty data can lead you to draw inaccurate conclusions.
 Data cleaning is an essential task in data science. Without properly preprocessed, cleaned data, the results of any data analysis or machine learning model could be inaccurate. In this repo, you will learn how to identify, diagnose, and treat a variety of data preprocessing & data cleaning problems in Python, ranging from simple to advanced. You will deal with improper data types, check that your data is in the correct range, handle missing data, perform record linkage, and more!</b>
