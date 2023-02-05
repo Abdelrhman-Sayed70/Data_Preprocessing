@@ -58,42 +58,40 @@ Bad data could be:
 > ```
 
 ## *b- Drop unnecessary columns*
-<  ```py
-<  df.drop(columns=['col 1','col 4'],inplace=True)
-  ```
+>  ```py
+>  df.drop(columns=['col 1','col 4'],inplace=True)
+>  ```
 
 ## *c- Wrong fromat*
-- Cells with data of wrong format can make it difficult, or even impossible, to analyze data. For example this record "20201226" in date column is wrong format data 
-  that should be 2020-12-26
-- Wayes to fix wrong format data:
-    
-   ❱ convert all cells in the columns into the same format   
-   ❱ remove the rows that has wrong format   
-   
-### ❱ convert all cells in the columns into the same format
-```py
-import pandas as pd
-df = pd.read_csv('data.csv')
-df['Date'] = pd.to_datetime(df['Date'])
-print(df.to_string())
-```
-### ❱ Replace empty cells with values
-
-- The result from the converting the column to datatime  gave us a NaT value, which can be handled as a NULL value, and we can remove the row by using the dropna()       method.
-
-```py
-df.dropna(subset=['Date'], inplace = True)
-```
+> - Cells with data of wrong format can make it difficult, or even impossible, to analyze data. For example this record "20201226" in date column is wrong format data 
+>  that should be 2020-12-26
+> - Wayes to fix wrong format data:<br> 
+>     ❱ convert all cells in the columns into the same format   
+>     ❱ remove the rows that has wrong format   
+>   
+> ### ❱ convert all cells in the columns into the same format
+> ```py
+> import pandas as pd
+> df = pd.read_csv('data.csv')
+> df['Date'] = pd.to_datetime(df['Date'])
+> print(df.to_string())
+> ```
+> ### ❱ Replace empty cells with values
+>
+> - The result from the converting the column to datatime  gave us a NaT value, which can be handled as a NULL value, and we can remove the row by using the dropna()       method.
+>
+> ```py
+> df.dropna(subset=['Date'], inplace = True)
+> ```
 
 ## *d- Wrong data*
-- "Wrong data" does not have to be "empty cells" or "wrong format", it can just be wrong,
--  like if someone registered "199" instead of "1.99".
--  If you have a data set for courses in the college. You have class duration is 2 or 3 hours. While you check the data set you find out that there is a classes have      duration 30 hours! 
-- Sometimes you can spot wrong data by looking at the data set, because you have an expectation of what it should be.
-- Wayes to fix wrong format data:
-
-   ❱ Replacing Values<br> 
-   ❱ Removing Rows
+> - "Wrong data" does not have to be "empty cells" or "wrong format", it can just be wrong,
+> -  like if someone registered "199" instead of "1.99".
+> -  If you have a data set for courses in the college. You have class duration is 2 or 3 hours. While you check the data set you find out that there is a classes have      duration 30 hours! 
+> - Sometimes you can spot wrong data by looking at the data set, because you have an expectation of what it should be.
+> - Wayes to fix wrong format data: <br>
+>     ❱ Replacing Values<br> 
+>     ❱ Removing Rows
 
 ### ❱ Replacing Values
 - One way to fix wrong values is to replace them with something suitable else.
