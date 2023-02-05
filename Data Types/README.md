@@ -16,7 +16,7 @@
 ![separator2](https://i.imgur.com/4gX5WFr.png)
 
 # Quantitve Data & Qualitive Data
-  ![image](https://user-images.githubusercontent.com/99830416/216848775-ac6126e1-e0e5-45b0-9e7a-d1f1250bdd34.png)
+  > ![image](https://user-images.githubusercontent.com/99830416/216848775-ac6126e1-e0e5-45b0-9e7a-d1f1250bdd34.png)
 
 ## Quantitve Data
 > ### 1. Discrete
