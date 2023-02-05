@@ -122,6 +122,6 @@ df.dropna(subset=['Date'], inplace = True)
    df.drop_duplicates(inplace = True)
    ```
 
-# Checking for the correction columns data types  
+# Checking for the correctness columns data types  
 
 # Data scaling
