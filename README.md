@@ -23,7 +23,7 @@ Bad data could be:
    ❱ Remove rows that contain empty cells.<br> 
    ❱ Replace all empty cells with values <br> 
 
-#### ❱ Remove rows that contain empty cells
+### ❱ Remove rows that contain empty cells
   ```py
   # not affect the original dataframe
   newdf = df.dropna()
@@ -31,7 +31,7 @@ Bad data could be:
   # affect the original dataframe
   df.dropna(inplcae=True)
   ```
-#### ❱ Replace empty cells with values
+### ❱ Replace empty cells with values
 ```py
 # fill all empty cells in dataframe with value 130 (in the original dataframe)
 df.fillna(130, inplace=True)
@@ -52,14 +52,14 @@ df["Quantity"].fillna(column_mean, inplace=True)
    ❱ convert all cells in the columns into the same format   
    ❱ remove the rows that has wrong format   
    
-#### ❱ convert all cells in the columns into the same format
+### ❱ convert all cells in the columns into the same format
 ```py
 import pandas as pd
 df = pd.read_csv('data.csv')
 df['Date'] = pd.to_datetime(df['Date'])
 print(df.to_string())
 ```
-#### ❱ Replace empty cells with values
+### ❱ Replace empty cells with values
 
 - The result from the converting the column to datatime  gave us a NaT value, which can be handled as a NULL value, and we can remove the row by using the dropna()       method.
 
@@ -77,7 +77,7 @@ df.dropna(subset=['Date'], inplace = True)
    ❱ Replacing Values<br> 
    ❱ Removing Rows
 
-#### ❱ Replacing Values
+### ❱ Replacing Values
 - One way to fix wrong values is to replace them with something suitable else.
 - Set "Duration" = 45 in row 7:
  
@@ -99,7 +99,7 @@ df.dropna(subset=['Date'], inplace = True)
             df.loc[x, "Duration"] = 120
    ```
    
-#### ❱ Remove rows
+### ❱ Remove rows
    
 - Another way of handling wrong data is to remove the rows that contains wrong data.
 - This way you do not have to find out what to replace them with, and there is a good chance you do not need them to do your analyses.
