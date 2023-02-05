@@ -144,8 +144,13 @@ df.dropna(subset=['Date'], inplace = True)
   # this function make the data type of column strnig
   ```
 
+- Delete any URL
+
+
 # Checking for the correctness columns data types  
 
 # Data Normalization
 
 # Encoding categorical data to numerical data
+
+# Add some features
