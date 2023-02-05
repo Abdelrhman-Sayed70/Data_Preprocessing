@@ -14,13 +14,14 @@ Data cleaning is an essential task in data science. Without properly preprocesse
 # Data Cleaning 
 Data cleaning means fixing bad data in your data set.<br>
 Bad data could be: 
-1. Empty cells
-2. Drop unnecessary columns
-3. Wrong format
-4. Wrong data
-5. Duplicates
-6. Handling unwanted features
+  #### 1. Empty cells
+  #### 2. Drop unnecessary columns
+  #### 3. Wrong format
+  #### 4. Wrong data
+  #### 5. Duplicates
+  #### 6. Handling unwanted features
 
+---
 ## *1- Empty Cells*
 
 - Empty Cell can potentially give you a wrong result when you analyze data.
@@ -146,6 +147,7 @@ df.dropna(subset=['Date'], inplace = True)
 
 - Delete any URL
 
+---
 
 # Checking for the correctness columns data types  
 
