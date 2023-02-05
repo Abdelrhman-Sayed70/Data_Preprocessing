@@ -14,7 +14,7 @@
       print(df['user_type'].dtype)
     ```
 
-## Categorical (Ordinal)
+## Qualitive (Categorical) (Ordinal)
 - String with priority.
 - Orderd in a meaningful way.
 - Ordinal data is classified into categories within a variable that have a natural rank order. However, the distances between the categories are uneven or unknown.
@@ -39,7 +39,7 @@
     ```
  
 
-## Continues (Numerical) 
+## Quantitive (Continues) (Numerical) 
 - Numbers
 - In Python takes int, float data types
 
