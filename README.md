@@ -88,7 +88,7 @@ df.dropna(subset=['Date'], inplace = True)
 - For small data sets you might be able to replace the wrong data one by one, but not for big data sets. To replace wrong data for larger data sets you can create some   rules, e.g. set some boundaries for legal values, and replace any values that are outside of the boundaries.
 
    ```py
-   # set all values that are greater than 120 to 120 in Area code column
+   # set all values that are greater than 120 to 120 in Duration column
    df.loc[df['Duration'] > 120,'Duration'] = 120 
    ```
    
