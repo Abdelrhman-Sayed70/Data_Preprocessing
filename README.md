@@ -14,12 +14,12 @@ Pre_processing go through those steps :
 # Data Cleaning 
 Data cleaning means fixing bad data in your data set.<br>
 Bad data could be: 
-- Empty cells
-- Drop unnecessary columns
-- Wrong format
-- Wrong data
-- Duplicates
-- Outlires
+1. Empty cells
+2. Drop unnecessary columns
+3. Wrong format
+4. Wrong data
+5. Duplicates
+6. Handling unwanted features
 
 ## 1- Empty Cells
 
@@ -133,6 +133,16 @@ df.dropna(subset=['Date'], inplace = True)
    ```py
    df.drop_duplicates(inplace = True)
    ```
+   
+## 6. Handling unwanted features
+- Words that starts with the symbol '@', e.g., @AnnaMedaris, are removed.
+- Hashtag symbols are removed, e.g., #depression is converted to depression.
+  
+  ```py
+  df['name'] = df['name'].str.strip('@')
+  df['titles'] = df['titles'].str.strip('#')
+  # this function make the data type of column strnig
+  ```
 
 # Checking for the correctness columns data types  
 
