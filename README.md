@@ -124,4 +124,4 @@ df.dropna(subset=['Date'], inplace = True)
 
 # Checking for the correctness columns data types  
 
-# Data scaling
+# Data scaling (normalization)
