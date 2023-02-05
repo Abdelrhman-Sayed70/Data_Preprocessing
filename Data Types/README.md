@@ -44,7 +44,9 @@
 >  - We cannot assign values in order to each element
 >  - ❱ Eye color (Green, Red, Blue)
 >  - ❱ Marital statues (Single, Devorced, Married)  
-  
+> ### 3. Binary
+>  - 2 values (0, 1)
+
 >    ```py
 >    # Print new summary statistics 
 >    print(df['user_type_cat'].describe())
@@ -58,6 +60,9 @@
 >    # Print new summary statistics 
 >    print(df['user_type_cat'].describe())
 >    ```
+
+
+
 
 ![separator2](https://i.imgur.com/4gX5WFr.png)  
   
