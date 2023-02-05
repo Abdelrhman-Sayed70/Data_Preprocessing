@@ -13,7 +13,7 @@ Data cleaning is an essential task in data science. Without properly preprocesse
 # Data Cleaning 
 Data cleaning means fixing bad data in your data set.<br>
 Bad data could be: 
-  a. Empty cells
+  a. Null values
   b. Drop unnecessary columns
   c. Wrong format
   d. Wrong data
@@ -21,9 +21,13 @@ Bad data could be:
   f. Handling unwanted features
 
 ---
-## *a- Empty Cells*
+## *a- Null values*
 
 - Empty Cell can potentially give you a wrong result when you analyze data.
+- If you want to assign some missing values as null ? assume that some cells have '?', 'UNDEFINED' i want to make them read as Null values
+  ```py
+  df = pd.read_csv('data.csv', na_values=['?','UNDEFINED'])
+  ```
 - Ways to deal with empty cells:
 
    ❱ Remove rows that contain empty cells.<br> 
@@ -152,7 +156,7 @@ df.dropna(subset=['Date'], inplace = True)
 
 # Data Normalization
 
-# Encoding categorical data to numerical data
+# Encoding categorical data 
 
 # Add some features
 - Every word is converted to lowercase
