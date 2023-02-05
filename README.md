@@ -1,58 +1,61 @@
 # Data_Preprocessing
 ![analyze-gif](https://user-images.githubusercontent.com/99830416/216808760-167a7c01-12ff-462f-afc5-91771ecb5508.gif)
 
-<b> It's commonly said that data scientists spend 80% of their time preprocess, cleaning and manipulating data and only 20% of their time analyzing it.The time spent cleaning is vital since analyzing dirty data can lead you to draw inaccurate conclusions.
-Data cleaning is an essential task in data science. Without properly preprocessed, cleaned data, the results of any data analysis or machine learning model could be inaccurate. In this repo, you will learn how to identify, diagnose, and treat a variety of data preprocessing & data cleaning problems in Python, ranging from simple to advanced. You will deal with improper data types, check that your data is in the correct range, handle missing data, perform record linkage, and more!</b>
+> <b> It's commonly said that data scientists spend 80% of their time preprocess, cleaning and manipulating data and only 20% of their time analyzing it.The time spent > cleaning is vital since analyzing dirty data can lead you to draw inaccurate conclusions.
+> Data cleaning is an essential task in data science. Without properly preprocessed, cleaned data, the results of any data analysis or machine learning model could be > inaccurate. In this repo, you will learn how to identify, diagnose, and treat a variety of data preprocessing & data cleaning problems in Python, ranging from simple  > to advanced. You will deal with improper data types, check that your data is in the correct range, handle missing data, perform record linkage, and more!</b>
+
+![separator2](https://i.imgur.com/4gX5WFr.png)
 
 ## Pre_processing performed through those steps :
-- [Data Cleaning ](#data-cleaning)
-- [Checking for the correctness columns data types](#checking-for-the-correctness-columns-data-types)
-- [Data Normalization](#data-normalization)
-- [Encoding categorical data to numerical data](#encoding-categorical-data-to-numerical-data)
+> - [Data Cleaning ](#data-cleaning)
+> - [Checking for the correctness columns data types](#checking-for-the-correctness-columns-data-types)
+> - [Data Normalization](#data-normalization)
+> - [Encoding categorical data to numerical data](#encoding-categorical-data-to-numerical-data)
 
 # Data Cleaning 
 Data cleaning means fixing bad data in your data set.<br>
 Bad data could be: 
-  a. Null values
-  b. Drop unnecessary columns
-  c. Wrong format
-  d. Wrong data
-  e. Duplicates
-  f. Handling unwanted features
+
+>  - a. Null values
+>  - b. Drop unnecessary columns
+>  - c. Wrong format
+>  - d. Wrong data
+>  - e. Duplicates
+>  - f. Handling unwanted features
 
 ---
 ## *a- Null values*
 
-- Empty Cell can potentially give you a wrong result when you analyze data.
-- If you want to assign some missing values as null ? assume that some cells have '?', 'UNDEFINED' i want to make them read as Null values
-  ```py
-  df = pd.read_csv('data.csv', na_values=['?','UNDEFINED'])
-  ```
-- Ways to deal with empty cells:
-
-   ❱ Remove rows that contain empty cells.<br> 
-   ❱ Replace all empty cells with values <br> 
-
-### ❱ Remove rows that contain empty cells
-  ```py
-  # not affect the original dataframe
-  newdf = df.dropna()
-
-  # affect the original dataframe
-  df.dropna(inplcae=True)
-  ```
-### ❱ Replace empty cells with values
-```py
-# fill all empty cells in dataframe with value 130 (in the original dataframe)
-df.fillna(130, inplace=True)
-
-# fill all empty cells in specific column with value 130 (in the original dataframe)
-df["Quantity"].fillna(130, inplace=True)
-
-# Replacing using mean, median, mode
-column_mean = df['Quantity'].mean() # make sure that Quantity is column is int data type
-df["Quantity"].fillna(column_mean, inplace=True)
-```
+> - Empty Cell can potentially give you a wrong result when you analyze data.
+> - If you want to assign some missing values as null ? assume that some cells have '?', 'UNDEFINED' i want to make them read as Null values
+>  ```py
+>  df = pd.read_csv('data.csv', na_values=['?','UNDEFINED'])
+>  ```
+> - Ways to deal with empty cells:
+>
+>   ❱ Remove rows that contain empty cells.<br> 
+>   ❱ Replace all empty cells with values <br> 
+>
+> ### ❱ Remove rows that contain empty cells
+>  ```py
+>  # not affect the original dataframe
+>  newdf = df.dropna()
+>
+>  # affect the original dataframe
+>  df.dropna(inplcae=True)
+>  ```
+> ### ❱ Replace empty cells with values
+> ```py
+> # fill all empty cells in dataframe with value 130 (in the original dataframe)
+> df.fillna(130, inplace=True)
+>
+> # fill all empty cells in specific column with value 130 (in the original dataframe)
+> df["Quantity"].fillna(130, inplace=True)
+>
+> # Replacing using mean, median, mode
+> column_mean = df['Quantity'].mean() # make sure that Quantity is column is int data type
+> df["Quantity"].fillna(column_mean, inplace=True)
+> ```
 
 ## *b- Drop unnecessary columns*
   ```py
@@ -151,12 +154,17 @@ df.dropna(subset=['Date'], inplace = True)
 - Delete any URL
 
 ---
-
+![separator2](https://i.imgur.com/4gX5WFr.png)
 # Checking for the correctness columns data types  
 
+![separator2](https://i.imgur.com/4gX5WFr.png)
 # Data Normalization
 
+![separator2](https://i.imgur.com/4gX5WFr.png)
 # Encoding categorical data 
 
+![separator2](https://i.imgur.com/4gX5WFr.png)
 # Add some features
 - Every word is converted to lowercase
+
+![separator2](https://i.imgur.com/4gX5WFr.png)
