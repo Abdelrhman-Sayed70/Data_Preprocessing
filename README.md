@@ -4,11 +4,11 @@
 > Data cleaning is an essential task in data science. Without properly preprocessed, cleaned data, the results of any data analysis or machine learning model could be  inaccurate. In this repo, you will learn how to identify, diagnose, and treat a variety of data preprocessing & data cleaning problems in Python, ranging from simple to advanced. You will deal with improper data types, check that your data is in the correct range, handle missing data, perform record linkage, and more!</b>
 
 ## Pre_processing performed through those steps :
-> 1. [Columns Processing]()
-> 2. [Data Cleaning ](#data-cleaning)
-> 3. [Checking for the correctness columns data types](#checking-for-the-correctness-columns-data-types)
-> 4. [Data Normalization](#data-normalization)
-> 5. [Encoding categorical data to numerical data](#encoding-categorical-data-to-numerical-data)
+> ### 1. [Columns Processing]()
+> ### 2. [Data Cleaning ](#data-cleaning)
+> ### 3. [Checking for the correctness columns data types](#checking-for-the-correctness-columns-data-types)
+> ### 4. [Data Normalization](#data-normalization)
+> ### 5. [Encoding categorical data to numerical data](#encoding-categorical-data-to-numerical-data)
 
 ![separator2](https://i.imgur.com/4gX5WFr.png)
 
