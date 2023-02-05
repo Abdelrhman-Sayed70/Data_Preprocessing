@@ -110,3 +110,15 @@ df.dropna(subset=['Date'], inplace = True)
        df.drop(x, inplace = True)
    ```
    
+# Duplicates
+- Discovering Duplicates
+  
+  ```py
+  print(df.duplicated()) # Returns True for every row that is a duplicate, othwerwise False
+  ```
+ 
+ - Removing Duplicates
+ 
+   ```py
+   df.drop_duplicates(inplace = True)
+   ```
