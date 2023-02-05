@@ -1,5 +1,5 @@
 # Data_Preprocessing
- ![render](https://user-images.githubusercontent.com/99830416/216795669-08509910-1347-478a-afe5-a408a2a84746.gif)
+  
 
 
 <b> It's commonly said that data scientists spend 80% of their time preprocess, cleaning and manipulating data and only 20% of their time analyzing it.The time spent cleaning is vital since analyzing dirty data can lead you to draw inaccurate conclusions.
