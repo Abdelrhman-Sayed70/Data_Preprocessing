@@ -20,16 +20,35 @@
 
 > ![image](https://user-images.githubusercontent.com/99830416/216852482-4f1bb67b-4c06-4bf4-9156-8e8d493e92b3.png)
 > - dependent variable : Purshased_Any_Item
-> - independent variables : Profission, age, monthly_income
-> - name and state does not determine the dependent variable (as all values in those columns are unique). So they are not an independent variables. **So they should be removed** 
-
+> - independent variables : State, Profission, age, monthly_income
+> - Name does not determine the dependent variable (as all values in this column are unique). So it is not an independent variables. **So it should be removed** 
+  
+> ```py
+> independent = df[ ['State', 'Profession', 'Age', 'Monthly_income'] ]
+> dependent = df[ ['Purshased_Any_Item'] ] 
+> ```
+> ```py
+> # another way to split data
+> X = df.drop(columns=['Name','Purshased_Any_Item'])
+> Y = df['Purshased_Any_Item']
+> ```
 
 ![separator2](https://i.imgur.com/4gX5WFr.png)
 # 2. Columns Processing
 
-- ### Drop unwanted columns :
-   ❱ columns that does not affect the prediction. <br>
-   ❱ columns that most of its all values are nulls and unwanted.
+> - ### Drop unwanted columns :
+>   ##### ❱  Columns that does not affect the prediction (get them from the first step). <br>
+>   ```py
+>   newdf = df.drop(columns=['Name'])
+>   # or df.drop(columns=['Name'], inplace=True)
+>   ```
+>   ##### ❱ Columns that most of its all values are nulls and unwanted.
+   
+- ### Analysis Columns
+   ```py
+
+
+   ```
 
 - ### validate columns data types
 
