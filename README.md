@@ -62,7 +62,8 @@
 >   ```
 
 - ### Validate columns data types
-  #### Check those [notebooks](https://github.com/Abdelrhman-Sayed70/Data_Preprocessing/tree/main/Columns%20Data%20Types)
+
+     #### ❱ Check those [notebooks](https://github.com/Abdelrhman-Sayed70/Data_Preprocessing/tree/main/Columns%20Data%20Types)
 
 ![separator2](https://i.imgur.com/4gX5WFr.png)
 # 3. Data Cleaning 
