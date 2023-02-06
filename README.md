@@ -36,7 +36,7 @@
 ![separator2](https://i.imgur.com/4gX5WFr.png)
 # 2. Columns Processing
 
-> - ### Drop unwanted columns :
+- ### Drop unwanted columns :
 >   ##### ❱  Columns that does not affect the prediction (get them from the first step). <br>
 >   ```py
 >   newdf = df.drop(columns=['Name'])
@@ -61,7 +61,7 @@
 >   df.describe()
 >   ```
 
-- ### validate columns data types
+- ### Validate columns data types
 
 ![separator2](https://i.imgur.com/4gX5WFr.png)
 # 3. Data Cleaning 
