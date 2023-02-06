@@ -70,12 +70,11 @@
  Data cleaning means fixing bad data in your data set.<br>
  Bad data could be: 
 
-   - a. Null values
-   - b. Drop unnecessary columns
-   - c. Wrong format
-   - d. Wrong data
-   - e. Duplicates
-   - f. Handling unwanted features
+   - #### a. Null values
+   - #### b. Wrong format
+   - #### c. Wrong data
+   - #### d. Duplicates
+   - #### e. Handling unwanted features
 
 ## *a- Null values*
 >
@@ -110,12 +109,7 @@
 > df["Quantity"].fillna(column_mean, inplace=True)
 > ```
 
-## *b- Drop unnecessary columns*
->  ```py
->  df.drop(columns=['col 1','col 4'],inplace=True)
->  ```
-
-## *c- Wrong fromat*
+## *b- Wrong fromat*
 > - Cells with data of wrong format can make it difficult, or even impossible, to analyze data. For example this record "20201226" in date column is wrong format data 
 >   that should be 2020-12-26
 > - Wayes to fix wrong format data :
@@ -138,7 +132,7 @@
 > df.dropna(subset=['Date'], inplace = True)
 > ```
 
-## *d- Wrong data*
+## *c- Wrong data*
 > -  Wrong data does not have to be empty cells or wrong format, it can just be wrong,
 >
 > -  like if someone registered "199" instead of "1.99".
@@ -184,7 +178,7 @@
 >       df.drop(x, inplace = True)
 >   ```
    
-## *e- Duplicates*
+## *d- Duplicates*
 > - Discovering Duplicates
 >  
 >   ```py
@@ -197,7 +191,7 @@
 >   df.drop_duplicates(inplace = True)
 >   ```
    
-## *f. Handling unwanted features*
+## *e. Handling unwanted features*
 > - Words that starts with the symbol '@', e.g., @AnnaMedaris, are removed.
 > - Hashtag symbols are removed, e.g., #depression is converted to depression.
 >  
