@@ -203,12 +203,15 @@
 >
 > - Delete any URL
 
+![separator2](https://i.imgur.com/4gX5WFr.png)
+# Encoding categorical data 
+
+- Ordinal 
+
+- Nominal 
 
 ![separator2](https://i.imgur.com/4gX5WFr.png)
 # Data Normalization
-
-![separator2](https://i.imgur.com/4gX5WFr.png)
-# Encoding categorical data 
 
 ![separator2](https://i.imgur.com/4gX5WFr.png)
 # Add some features
