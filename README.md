@@ -206,9 +206,9 @@
 ![separator2](https://i.imgur.com/4gX5WFr.png)
 # Encoding categorical data 
 
-- Ordinal 
-
-- Nominal 
+## *Ordinal*
+ 
+## *Nominal* 
 
 ![separator2](https://i.imgur.com/4gX5WFr.png)
 # Data Normalization
