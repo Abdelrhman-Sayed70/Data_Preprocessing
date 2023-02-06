@@ -204,11 +204,17 @@
 > - Delete any URL
 
 ![separator2](https://i.imgur.com/4gX5WFr.png)
-# Encoding categorical data 
+# Deal with categorical data [ORDINAL]
 
-## *Ordinal*
- 
-## *Nominal* 
+
+
+
+
+
+
+
+![separator2](https://i.imgur.com/4gX5WFr.png)
+# Deal with categorical data [NOMINAL]
 
 ![separator2](https://i.imgur.com/4gX5WFr.png)
 # Data Normalization
