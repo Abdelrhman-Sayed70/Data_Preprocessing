@@ -36,14 +36,14 @@
 ![separator2](https://i.imgur.com/4gX5WFr.png)
 # 2. Columns Processing
 
-- ### Drop unwanted columns :
+- ## Drop unwanted columns :
 >   ##### ❱  Columns that does not affect the prediction (get them from the first step). <br>
 >   ```py
 >   newdf = df.drop(columns=['Name'])
 >   # or df.drop(columns=['Name'], inplace=True)
 >   ```
 
-- ### Analysis Columns
+- ## Analysis Columns
 >   ```py
 >   # display number of rows and columns of the data set
 >   df.shape
@@ -60,14 +60,14 @@
 >   df.describe()
 >   ```
 
-- ### Deal with columns after this info
+- ## Deal with columns after this info
 >   ##### ❱ If column has very large average of missing data Drop it.
 >   ##### ❱ If the average of missing data is small then fill the empty cells
 >   ##### ❱ Check this [Notebook]()
 
-- ### Validate columns data types
->
->    **❱ Check those [notebooks](https://github.com/Abdelrhman-Sayed70/Data_Preprocessing/tree/main/Columns%20Data%20Types)**
+- ## Validate columns data types
+> - ### What are [Data Types](https://github.com/Abdelrhman-Sayed70/Data_Preprocessing/tree/main/Data%20Types)? 
+> - ### Check those [Notebooks](https://github.com/Abdelrhman-Sayed70/Data_Preprocessing/tree/main/Columns%20Data%20Types) 
 
 ![separator2](https://i.imgur.com/4gX5WFr.png)
 # 3. Data Cleaning 
@@ -212,14 +212,15 @@
 ![separator2](https://i.imgur.com/4gX5WFr.png)
 
 # 4. Deal With Categorical Data 
+- ### What are [Data Types](https://github.com/Abdelrhman-Sayed70/Data_Preprocessing/tree/main/Data%20Types)?
 - ### Check this [Notebook](https://github.com/Abdelrhman-Sayed70/Data_Preprocessing/tree/main/Categorical%20Data)
 
 ![separator2](https://i.imgur.com/4gX5WFr.png)
 # 5. Feature Scaling [Normalizatio]
-- ### It used to  
+- ### Will be available soon  
 
 ![separator2](https://i.imgur.com/4gX5WFr.png)
-# Add some features
-- Every word is converted to lowercase
+# 6. Additional features
+- ### Every word is converted to lowercase
 
 ![separator2](https://i.imgur.com/4gX5WFr.png)
