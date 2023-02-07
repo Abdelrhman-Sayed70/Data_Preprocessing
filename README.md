@@ -42,8 +42,7 @@
 >   newdf = df.drop(columns=['Name'])
 >   # or df.drop(columns=['Name'], inplace=True)
 >   ```
->   ##### ❱ Columns that most of its all values are nulls and unwanted.
-   
+
 - ### Analysis Columns
 >   ```py
 >   # display number of rows and columns of the data set
@@ -60,6 +59,11 @@
 >   # Statistical description of numerical variables
 >   df.describe()
 >   ```
+
+- ### Deal with columns after this info
+>   ##### ❱ If column has very large average of missing data Drop it.
+>   ##### ❱ If the average of missing data is small then fill the empty cells
+>   ##### ❱ Check this [Notebook]()
 
 - ### Validate columns data types
 >
@@ -78,17 +82,18 @@
 
 ## *a- Null values*
 >
-> - Empty Cell can potentially give you a wrong result when you analyze data.
 > - If you want to assign some missing values as null ? assume that some cells have '?', 'UNDEFINED' i want to make them read as Null values
 >    ```py
 >    df = pd.read_csv('data.csv', na_values=['?','UNDEFINED'])
 >    ```
-> - Ways to deal with empty cells:
+> - Deal with empty cells:
 >
+>   ❱ Calculate total number of rows that has missing values then calc its mean.<br>
+>   ❱ If the average of missing rows is very small so we can **Drop those rows** else we can **Fill the empty cells with value**<br>
 >   ❱ Remove rows that contain empty cells.<br> 
 >   ❱ Replace all empty cells with values <br> 
->
-> ### ❱ Remove rows that contain empty cells
+> ### 
+> ### ❱ Drop rows that contain empty cells
 >  ```py
 >  # not affect the original dataframe
 >  newdf = df.dropna()
@@ -96,7 +101,7 @@
 >  # affect the original dataframe
 >  df.dropna(inplcae=True)
 >  ```
-> ### ❱ Replace empty cells with values
+> ### ❱ Fill empty cells with values
 > ```py
 > # fill all empty cells in dataframe with value 130 (in the original dataframe)
 > df.fillna(130, inplace=True)
@@ -108,6 +113,7 @@
 > column_mean = df['Quantity'].mean() # make sure that Quantity is column is int data type
 > df["Quantity"].fillna(column_mean, inplace=True)
 > ```
+> ### ❱ Check this [Notebook]()
 
 ## *b- Wrong fromat*
 > - Cells with data of wrong format can make it difficult, or even impossible, to analyze data. For example this record "20201226" in date column is wrong format data 
