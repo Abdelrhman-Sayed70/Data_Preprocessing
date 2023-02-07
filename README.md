@@ -209,7 +209,8 @@
 - ### Check this [Notebook](https://github.com/Abdelrhman-Sayed70/Data_Preprocessing/tree/main/Categorical%20Data)
 
 ![separator2](https://i.imgur.com/4gX5WFr.png)
-# Data Normalization
+# 5. Feature Scaling [Normalizatio]
+- ### It used to  
 
 ![separator2](https://i.imgur.com/4gX5WFr.png)
 # Add some features
