@@ -237,8 +237,8 @@
 - ### Check this [Notebook](https://github.com/Abdelrhman-Sayed70/Data_Preprocessing/tree/main/Categorical%20Data)
 
 ![separator2](https://i.imgur.com/4gX5WFr.png)
-# 5. Feature Scaling [Normalizatio]
-- ### Will be available soon  
+# 5. Feature Scaling [Normalization]
+- ### Will be available soon..
 
 ![separator2](https://i.imgur.com/4gX5WFr.png)
 # 6. Additional features
