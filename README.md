@@ -233,8 +233,14 @@
 ![separator2](https://i.imgur.com/4gX5WFr.png)
 
 # 4. Deal With Categorical Data 
-- ### What are [Data Types](https://github.com/Abdelrhman-Sayed70/Data_Preprocessing/tree/main/Data%20Types)?
-- ### Check this [Notebook](https://github.com/Abdelrhman-Sayed70/Data_Preprocessing/tree/main/Categorical%20Data)
+> - ### What are [Data Types](https://github.com/Abdelrhman-Sayed70/Data_Preprocessing/tree/main/Data%20Types)?
+> - ### Replace all nan with most frequant category (mode)  
+>     ```py
+>     most_freq_items = df['col'].mode()
+>     most_freq = df['col'].mode()[0]
+>     df['col'].fillna(most_freq)
+>     ```
+> - ### Check this [Notebook](https://github.com/Abdelrhman-Sayed70/Data_Preprocessing/tree/main/Categorical%20Data)
 
 ![separator2](https://i.imgur.com/4gX5WFr.png)
 # 5. Feature Scaling [Normalization]
