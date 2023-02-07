@@ -60,9 +60,9 @@
 >   df.describe()
 >   ```
 
-- ## Deal with columns after this info
+- ## Deal with columns after get the info 
 >  - #### If column has very large average of missing data Drop it.
->  - #### If the average of missing data is small then fill the empty cells
+>  - #### If the average of missing data is small then fill the empty cells [Done in 3rd step 3.Data cleaning]
 >  - #### Check this [Notebook]()
 
 - ## Validate columns data types
