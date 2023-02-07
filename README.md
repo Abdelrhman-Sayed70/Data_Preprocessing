@@ -34,6 +34,7 @@
 > ```
 
 ![separator2](https://i.imgur.com/4gX5WFr.png)
+
 # 2. Columns Processing
 
 - ## Drop unwanted columns :
@@ -65,6 +66,21 @@
 >  - #### If the average of missing data is small then fill the empty cells [Done in 3rd step 3.Data cleaning]
 >  - #### Check this [Notebook]()
 
+- ## Some statistics on columns 
+> 
+>  - #### Get the mean of column 
+>    ```py
+>     column_mean = df['col'].mean()
+>    ```        
+>  - #### Get the mean of all columns in Datafram
+>    ```py
+>    columns_mean = df.means(axis=0)
+>    columns_mean
+>    ```
+>  - #### 
+
+
+
 - ## Validate columns data types
 > - #### What are [Data Types](https://github.com/Abdelrhman-Sayed70/Data_Preprocessing/tree/main/Data%20Types)? 
 > - #### Check those [Notebooks](https://github.com/Abdelrhman-Sayed70/Data_Preprocessing/tree/main/Columns%20Data%20Types) 
@@ -92,7 +108,7 @@
 >   ❱ If the average of missing rows is very small so we can **Drop those rows** else we can **Fill the empty cells with value**<br>
 >   ❱ Remove rows that contain empty cells.<br> 
 >   ❱ Replace all empty cells with values <br> 
-> ### 
+>   
 > ### ❱ Drop rows that contain empty cells
 >  ```py
 >  # not affect the original dataframe
@@ -109,9 +125,14 @@
 > # fill all empty cells in specific column with value 130 (in the original dataframe)
 > df["Quantity"].fillna(130, inplace=True)
 >
-> # Replacing using mean, median, mode
+> # Replacing using mean, median, mode in one column
 > column_mean = df['Quantity'].mean() # make sure that Quantity is column is int data type
 > df["Quantity"].fillna(column_mean, inplace=True)
+> 
+> # Replacing using mean, median, mode in all columns
+> columns_mean = df.mean(axis=0) # make sure that Quantity is column is int data type
+> df.fillna(columns_mean, inplace=True)
+>
 > ```
 > ### ❱ Check this [Notebook]()
 
