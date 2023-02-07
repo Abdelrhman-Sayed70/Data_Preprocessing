@@ -12,7 +12,7 @@
 
 
 ![separator2](https://i.imgur.com/4gX5WFr.png)
-# 1. Split data into dependent and independent variables
+# 1. Split Data Into Dependent And Independent Variables
 > ![OIP](https://user-images.githubusercontent.com/99830416/216852188-72679712-6709-4317-ae6f-ddba9fb33160.jpg)
 > #### The hight of the plant depends on the amount of water & amount of fertilizer so :
 > - dependent variable **(does not depend on column which all values are unique)** : the hight of the plant
@@ -204,17 +204,9 @@
 > - Delete any URL
 
 ![separator2](https://i.imgur.com/4gX5WFr.png)
-# Deal with categorical data [ORDINAL]
 
-
-
-
-
-
-
-
-![separator2](https://i.imgur.com/4gX5WFr.png)
-# Deal with categorical data [NOMINAL]
+# 4. Deal With Categorical Data 
+- ### Check this [Notebook](https://github.com/Abdelrhman-Sayed70/Data_Preprocessing/tree/main/Categorical%20Data)
 
 ![separator2](https://i.imgur.com/4gX5WFr.png)
 # Data Normalization
