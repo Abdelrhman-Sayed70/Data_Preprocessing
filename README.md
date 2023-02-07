@@ -37,11 +37,11 @@
 # 2. Columns Processing
 
 - ## Drop unwanted columns :
->   ##### ❱  Columns that does not affect the prediction (get them from the first step). <br>
->   ```py
->   newdf = df.drop(columns=['Name'])
->   # or df.drop(columns=['Name'], inplace=True)
->   ```
+>   - #### Columns that does not affect the prediction (get them from the first step). <br>
+>        ```py
+>        newdf = df.drop(columns=['Name'])
+>        # or df.drop(columns=['Name'], inplace=True)
+>        ```
 
 - ## Analysis Columns
 >   ```py
@@ -61,13 +61,13 @@
 >   ```
 
 - ## Deal with columns after this info
->   ##### ❱ If column has very large average of missing data Drop it.
->   ##### ❱ If the average of missing data is small then fill the empty cells
->   ##### ❱ Check this [Notebook]()
+>  - #### If column has very large average of missing data Drop it.
+>  - #### If the average of missing data is small then fill the empty cells
+>  - #### Check this [Notebook]()
 
 - ## Validate columns data types
-> - ### What are [Data Types](https://github.com/Abdelrhman-Sayed70/Data_Preprocessing/tree/main/Data%20Types)? 
-> - ### Check those [Notebooks](https://github.com/Abdelrhman-Sayed70/Data_Preprocessing/tree/main/Columns%20Data%20Types) 
+> - #### What are [Data Types](https://github.com/Abdelrhman-Sayed70/Data_Preprocessing/tree/main/Data%20Types)? 
+> - #### Check those [Notebooks](https://github.com/Abdelrhman-Sayed70/Data_Preprocessing/tree/main/Columns%20Data%20Types) 
 
 ![separator2](https://i.imgur.com/4gX5WFr.png)
 # 3. Data Cleaning 
