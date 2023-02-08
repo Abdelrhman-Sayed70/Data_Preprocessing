@@ -8,7 +8,7 @@
 > ### 2. [Columns Processing](#2-columns-processing-1 )
 > ### 3. [Deal with Categorical data](#3-deal-with-categorical-data-1)
 > ### 4. [Data Cleaning](#4-data-cleaning-1)
-> ### 5. [Feature Scaling [Normalization]](#5-feature-scaling-normalization)
+> ### 5. [Feature Scaling [Normalization]](#5-feature-scaling-normalization-1)
 > ### 6. [Additional features](#6-additional-features-1)
 
 ![separator2](https://i.imgur.com/4gX5WFr.png)
