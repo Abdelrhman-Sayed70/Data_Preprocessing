@@ -77,14 +77,14 @@
 >    columns_mean = df.means(axis=0)
 >    columns_mean
 >    ```
->  - #### 
+> - ## Validate columns data types
+> - #### What are [Data Types](https://github.com/Abdelrhman-Sayed70/Data_Preprocessing/tree/main/Data%20Types)? 
+> - #### Check those [Notebooks](https://github.com/Abdelrhman-Sayed70/Data_Preprocessing/tree/main/Columns%20Data%20Types) 
+
 
 ![separator2](https://i.imgur.com/4gX5WFr.png)
 
 
-- ## Validate columns data types
-> - #### What are [Data Types](https://github.com/Abdelrhman-Sayed70/Data_Preprocessing/tree/main/Data%20Types)? 
-> - #### Check those [Notebooks](https://github.com/Abdelrhman-Sayed70/Data_Preprocessing/tree/main/Columns%20Data%20Types) 
 
 # 3. Deal With Categorical Data 
 > - ### What are [Data Types](https://github.com/Abdelrhman-Sayed70/Data_Preprocessing/tree/main/Data%20Types)?
