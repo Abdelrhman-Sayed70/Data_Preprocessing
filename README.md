@@ -3,13 +3,13 @@
 > <b> It's commonly said that data scientists spend 80% of their time preprocessing, cleaning and manipulating data and only 20% of their time analyzing it.The time spent   cleaning is vital since analyzing dirty data can lead you to draw inaccurate conclusions.
 > Data cleaning is an essential task in data science. Without properly preprocessed, cleaned data, the results of any data analysis or machine learning model could be  inaccurate. In this repo, you will learn how to identify, diagnose, and treat a variety of data preprocessing & data cleaning problems in Python, ranging from simple to advanced. You will deal with improper data types, check that your data is in the correct range, handle missing data, perform record linkage, and more!</b>
 
-## Pre_processing performed through those steps :
+## Pre_processing is performed through those steps :
 > ### 1. [Split data into dependent and independent variables](#1-split-data-into-dependent-and-independent-variables-1 )
 > ### 2. [Columns Processing](#2-columns-processing-1 )
-> ### 3. [Data Cleaning](#3-data-cleaning-1)
-> ### 4. [Data Normalization](#data-normalization)
-> ### 5. [Encoding categorical data]()
-
+> ### 3. [Deal with Categorical data](#3-deal-with-categorical-data-1)
+> ### 4. [Data Cleaning](#4-data-cleaning-1)
+> ### 5. [Feature Scaling [Normalization]](#5-feature-scaling-normalization)
+> ### 6. [Additional features](#6-additional-features-1)
 
 ![separator2](https://i.imgur.com/4gX5WFr.png)
 # 1. Split Data Into Dependent And Independent Variables
@@ -79,14 +79,26 @@
 >    ```
 >  - #### 
 
+![separator2](https://i.imgur.com/4gX5WFr.png)
 
 
 - ## Validate columns data types
 > - #### What are [Data Types](https://github.com/Abdelrhman-Sayed70/Data_Preprocessing/tree/main/Data%20Types)? 
 > - #### Check those [Notebooks](https://github.com/Abdelrhman-Sayed70/Data_Preprocessing/tree/main/Columns%20Data%20Types) 
 
+# 3. Deal With Categorical Data 
+> - ### What are [Data Types](https://github.com/Abdelrhman-Sayed70/Data_Preprocessing/tree/main/Data%20Types)?
+> - ### Replace all nan with most frequant category (mode)  
+>     ```py
+>     most_freq_items = df['col'].mode()
+>     most_freq = df['col'].mode()[0]
+>     df['col'].fillna(most_freq)
+>     ```
+> - ### Check this [Notebook](https://github.com/Abdelrhman-Sayed70/Data_Preprocessing/tree/main/Categorical%20Data)
+
+
 ![separator2](https://i.imgur.com/4gX5WFr.png)
-# 3. Data Cleaning 
+# 4. Data Cleaning 
  Data cleaning means fixing bad data in your data set.<br>
  Bad data could be: 
 
@@ -232,21 +244,11 @@
 
 ![separator2](https://i.imgur.com/4gX5WFr.png)
 
-# 4. Deal With Categorical Data 
-> - ### What are [Data Types](https://github.com/Abdelrhman-Sayed70/Data_Preprocessing/tree/main/Data%20Types)?
-> - ### Replace all nan with most frequant category (mode)  
->     ```py
->     most_freq_items = df['col'].mode()
->     most_freq = df['col'].mode()[0]
->     df['col'].fillna(most_freq)
->     ```
-> - ### Check this [Notebook](https://github.com/Abdelrhman-Sayed70/Data_Preprocessing/tree/main/Categorical%20Data)
-
-![separator2](https://i.imgur.com/4gX5WFr.png)
 # 5. Feature Scaling [Normalization]
 - ### Will be available soon..
 
 ![separator2](https://i.imgur.com/4gX5WFr.png)
+
 # 6. Additional features
 - ### Every word is converted to lowercase
 
